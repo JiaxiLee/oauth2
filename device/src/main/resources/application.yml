@@ -1,0 +1,36 @@
+server:
+  port: 7002
+  servlet:
+    context-path: /device
+spring:
+  application:
+    name: device-service
+  redis:
+    password:
+    database: 0
+    port: 6379
+    host: 39.108.141.63
+    timeout: 6000ms
+  lettuce:
+    pool:
+      max-active: 10  #连接池最大连接数（使用负值表示没有限制）
+      max-idle: 6   #连接池中的最大空闲连接
+      min-idle: 2       # 连接池中的最小空闲连接
+      max-wait: -1    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5001/eureka/
+security:
+  oauth2:
+    client:
+      clientId: device-service
+      clientSecret: 789456
+      accessTokenUri: http://auth-service:7001/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+    resource:
+      user-info-uri: http://localhost:7001/uaa/users/current
+

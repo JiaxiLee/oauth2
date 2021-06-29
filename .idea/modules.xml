@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/auth/auth.iml" filepath="$PROJECT_DIR$/auth/auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/device/device.iml" filepath="$PROJECT_DIR$/device/device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurake/eurake.iml" filepath="$PROJECT_DIR$/eurake/eurake.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/job/job.iml" filepath="$PROJECT_DIR$/job/job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth.iml" filepath="$PROJECT_DIR$/oauth.iml" />
+    </modules>
+  </component>
+</project>
